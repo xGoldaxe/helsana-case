@@ -1,0 +1,8 @@
+.feed {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.75fr 0.25fr;
+    gap: 25px;
+    &__content {
+    }
+}

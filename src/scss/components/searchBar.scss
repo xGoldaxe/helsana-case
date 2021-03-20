@@ -1,0 +1,47 @@
+.searchBar {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    input {
+        margin: 0 50px;
+        height: min-content;
+        border: none;
+        background: #ecebeb;
+    }
+    &__logo {
+        font-size: 60px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        span  {
+            color: $mainColor;
+        }
+    }
+    &__notif {
+        height: 70%;
+        padding: 0 25px;
+        border-left: 2px solid #dfdfdf;
+        border-right: 2px solid #dfdfdf;
+        margin-right: 25px;
+        display: flex;
+        align-items: center;
+        img {
+            height: 70%;
+        }
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+        div {
+            width: 60px;
+            height: 60px;
+            background: #c1c1c1;
+            border-radius: 50%;
+            margin-left: 25px;
+        }
+        p {
+            width: max-content;
+            font-size: 25px;
+        }
+    }
+}
+

@@ -1,0 +1,8 @@
+$mainColor: #9a0941;
+
+@mixin normalBloc {
+    background: white;
+    border-radius: 20px;
+    width: 100%;
+    // box-shadow: 2px 2px 5px whitesmoke;
+}

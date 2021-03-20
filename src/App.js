@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Register from './questionar/register'
+import Home from './Home'
+import {BrowserRouter as Router, Route } from 'react-router-dom'
+import Question from './questionar/question';
 
-function App() {
+
+
+function App() {  
+  //if not connected go to register / login
+  //else cant acces register so take information about the profile => fully registered : acces to home else go to questionnaire at question "x" 
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Route path="/register" component={Register} exact/>
+      <Route path="/question" component={Question} exact/>
+      <Route path="/" component={Home} exact/>
+    </Router>
   );
 }
 

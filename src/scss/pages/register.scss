@@ -1,0 +1,58 @@
+.register {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0.65fr 0.35fr;
+    grid-template-rows: 100%;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 550px;
+            width: 95%;
+        }
+        &__title {
+            font-size: 60px;
+        }
+    }
+
+    &__left {
+        background: $mainColor;
+        padding: 20px 50px;
+        color: white;
+        text-align: right;
+        position: relative;
+        h3 {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            font-size: 70px;
+        }
+        p {
+            margin-block-start: 0;
+            font-size: 30px;
+            font-family: Comfortaa-Light;
+        }
+        &__images {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            opacity: 0.1;
+            background-image: url("../../images/health.svg");
+            background-size: 128px;
+            img {
+                top: 50%;
+                left: 50%;
+                width: 60%;
+            }
+        }
+    }
+}

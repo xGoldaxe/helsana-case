@@ -1,0 +1,11 @@
+.sortingBar {
+    @include normalBloc;
+    margin-top: 25px;
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+}

@@ -1,0 +1,24 @@
+.profilSummary {
+    &__top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    @include normalBloc;
+
+    padding: 20px 50px;
+    box-sizing: border-box;
+
+    &__name {
+        font-size: 40px;
+        padding: 20px;
+        margin-block-start: 0;
+    }
+    &__circle {
+        height: 180px;
+        width: 180px;
+        svg {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@mixin basicInput{
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 10px 15px;
+}
+
+input {
+    background: white;
+    @include basicInput;
+    margin-bottom: 30px;
+    border: 2.5px solid rgb(65, 63, 63);
+}
+
+button {
+    background: $mainColor;
+    color: white;
+    @include basicInput;
+    cursor: pointer;
+}
