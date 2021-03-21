@@ -1,7 +1,37 @@
 .timeline {
     width: 100%;
-    height: 150px;
     background: #ecebeb;
     border-radius: 20px;
-    margin: 20px 0;
+    margin: 50px 0 20px 0;
+    padding-top: 10px;
+
+    &__title {
+        font-size: 40px;
+        margin-block-start: 10px;
+        margin-block-end: 10px;
+        text-align: center;
+    }
+    &__blocks {
+        display: inline-flex;
+        padding: 12px;
+        gap: 12px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    &__step {
+        border-radius: 20px;
+        font-size: 25px;
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        &__sleep {
+            background: rgb(131, 131, 187);
+        }
+        &__food {
+            background: rgb(133, 167, 133);
+        }
+        &__sport {
+            background: rgb(163, 129, 129);
+        }
+    }
 }

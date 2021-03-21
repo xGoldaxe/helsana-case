@@ -3,6 +3,20 @@ $mainColor: #9a0941;
 @mixin normalBloc {
     background: white;
     border-radius: 20px;
+    
     width: 100%;
     // box-shadow: 2px 2px 5px whitesmoke;
+}
+
+@mixin tag {
+    background: #c1c1c1;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 20px;
+    // box-shadow: 2px 2px 5px whitesmoke;
+}
+
+@mixin picture {
+    background: #c1c1c1;
+    border-radius: 50%;
 }

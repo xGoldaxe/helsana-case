@@ -1,0 +1,21 @@
+.barCharts {
+    flex-grow: 1;
+    max-width: 400px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__bar {
+        display: flex;
+        align-items: center;
+        img {
+            width: 32px;
+            height: 32px;
+        }
+        div {
+            height: 10px;
+            margin-left: 15px;
+        }
+    }
+
+}

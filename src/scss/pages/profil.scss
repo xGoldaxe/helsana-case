@@ -1,0 +1,43 @@
+.profilPage {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    margin-top: 25px;
+    gap: 25px;
+}
+
+.profilBox {
+    @include normalBloc;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: min-content;
+    &--text {
+        padding: 25px;
+    }
+    &__name {
+        font-size: 40px;
+        margin-block-start: 0;
+        margin-block-end: 25px;
+    }
+    &__picture {
+        @include picture;
+        min-width: 100px;
+        height: 100px;
+        margin-right: 25px;
+    }
+    &__desc {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+}
+
+.profilGraph {
+    @include normalBloc;
+    text-align: center;
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 30px;
+    }
+}

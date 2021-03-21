@@ -2,6 +2,8 @@ import React, {useState, useEffect, useRef} from 'react'
 import healthSvg from '../images/health.svg'
 import muscleSvg from '../images/muscle.svg'
 import getQuestion from '../lib/questionnaire/getQuestion'
+import { useHistory } from "react-router-dom";
+
 
 function PrintInput({input, onChange}) {
     if(input.type == 'text') {
@@ -12,6 +14,8 @@ function PrintInput({input, onChange}) {
 export default function Question() {
     const [questionValue, setQuestionValue] = useState(null)
     const [responseValue, setResponseValue] = useState(null)
+    let history = useHistory();
+
 
     useEffect(() => {
         setQuestionValue(getQuestion())
@@ -24,11 +28,11 @@ export default function Question() {
     function submit(e) {
         e.preventDefault()
         if(questionValue.input.required) {
-            if(responseValue.length>1) {
-                console.log(responseValue)
+            if(responseValue !== null && responseValue.length>1) {
+                history.push("/");
             }
         } else {
-            console.log(responseValue)
+            history.push("/");
         }
     }
 

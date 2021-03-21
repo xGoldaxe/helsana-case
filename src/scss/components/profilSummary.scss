@@ -1,19 +1,43 @@
 .profilSummary {
     &__top {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        position: relative;
+        justify-content: space-between;
+        &__profileDesc {
+            margin-right: 75px;
+            &__name {
+                font-size: 50px;
+                padding: 20px 0;
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+            &__date {
+                display: flex;
+                background: #c1c1c1;
+                border-radius: 10px;
+                padding: 5px 15px;
+                justify-content: space-between;
+                width: 350px;
+                &__label {
+                    font-size: 25px;
+                    color: darken(#c1c1cc, 50%);
+                }
+                &__value {
+                    font-size: 40px;
+                }
+                p {
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+            }
+        }
     }
     @include normalBloc;
 
     padding: 20px 50px;
     box-sizing: border-box;
 
-    &__name {
-        font-size: 40px;
-        padding: 20px;
-        margin-block-start: 0;
-    }
+
     &__circle {
         height: 180px;
         width: 180px;

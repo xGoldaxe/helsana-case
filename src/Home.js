@@ -1,24 +1,34 @@
-import React from 'react'
-import EventBox from './components/EventBox'
-import Feed from './components/Feed'
+import React, {useState} from 'react'
 import Nav from './components/Nav'
-import ProfilSummary from './components/ProfilSummary'
 import SearchBar from './components/SearchBar'
-import SortingBar from './components/SortingBar'
+import HomeBlock from './homeBlocks/HomeBlock'
+import MessageBlock from './homeBlocks/MessageBlock'
+import ProfileBlock from './homeBlocks/ProfileBlock'
 
 export default function Home() {
+    const [homePlace, setHomePlace] = useState(0)
+    const routes = [<HomeBlock />,<ProfileBlock />, <MessageBlock />]
+    const blocksPage = ['Home', 'My Profile', 'Messages', 'Tutoriels']
+
+    var route = function createRoute() {
+        return routes[homePlace]
+    }
+
+    function changeBlock(place) {
+        setHomePlace(place)
+    }
+
     return (
         <>
             <div className="home">
-                <Nav/>
+                <Nav onClick={changeBlock} blocksPage={blocksPage} actualBlock={homePlace}/>
                 <SearchBar/>
                 <div className="mainBlock">
-                    <ProfilSummary/>
-                    <SortingBar/>
-                    <Feed/>
+                    {route()}
                 </div>
             </div>
 
         </>
     )
 }
+

@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import healthSvg from '../images/health.svg'
-import muscleSvg from '../images/muscle.svg'
+import { useHistory } from "react-router-dom";
 
 function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -19,11 +18,13 @@ export default function Register() {
         setPassword(event.target.value)
     }
 
+    let history = useHistory();
+
     function submit(e) {
         e.preventDefault()
         if(password.length >= 4 && validateEmail(email)) {
             setError(false)
-            console.log(email + ":" + password)
+            history.push("/question");
         }
         else {
             setError(true)
@@ -43,7 +44,7 @@ export default function Register() {
                 {error &&<p>Bad email or password lower than 4 charachters :(</p>}
             </div>
             <div className="register__left">
-                <h3>Heslana</h3>
+                <h3>VigorGo</h3>
                 <p>Become ealthier, save money</p>
                 <div className="register__left__images">
                     {/* <img src={muscleSvg}></img> */}

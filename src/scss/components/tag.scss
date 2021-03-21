@@ -1,0 +1,10 @@
+.tagUl {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        @include tag;
+        margin-right: 10px;
+    }
+}

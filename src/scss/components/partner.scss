@@ -1,0 +1,66 @@
+.partner {
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    @include normalBloc;
+    margin-bottom: 25px;
+    overflow: hidden;
+    &--inside {
+        padding: 25px 25px 0 25px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    h3 {
+        margin-block-end: 30px;
+        margin-block-start: 10px;
+        box-sizing: border-box;
+        font-size: 45px;
+    }
+
+    &__nope {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        width: min-content;
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+    }
+    &__profile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__tags {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        li {
+            @include tag;
+            margin-right: 15px;
+        }
+    }
+    &__desc {
+        font-size: 30px;
+        margin-block-start: 25px;
+        margin-block-end: 25px;
+    }
+    &__graph {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+        svg {
+            width: 150px;
+        }
+        flex-grow: 1;
+    }
+    
+
+    box-sizing: border-box;
+}
