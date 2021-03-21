@@ -24,6 +24,7 @@
         text-align: center;
         flex-grow: 1;
         flex-shrink: 1;
+        cursor: pointer;
         &__sleep {
             background: rgb(131, 131, 187);
         }
@@ -32,6 +33,24 @@
         }
         &__sport {
             background: rgb(163, 129, 129);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .timeline {
+        &__blocks {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .timeline {
+        &__title {
+            font-size: 25px;
         }
     }
 }

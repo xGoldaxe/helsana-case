@@ -1,9 +1,13 @@
+import React, {useState} from 'react'
 import yogaImg from '../images/yoga.svg'
-import React from 'react'
+import menu from '../images/cross2.svg'
 
-export default function Nav({onClick, blocksPage, actualBlock}) {
+
+export default function NavMobile({onClick, blocksPage, actualBlock, openMenu={openMenu}}) {
+
     return (
-        <nav className="nav">
+        <nav className="nav nav--mobile">
+            <img className="nav__menu" src={menu} alt="" onClick={openMenu}/>
             <ul>
                 {blocksPage.map((block,i) => {
                     if(i == actualBlock) {

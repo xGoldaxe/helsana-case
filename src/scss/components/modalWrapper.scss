@@ -1,0 +1,84 @@
+.modalWrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    &--bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.8;
+    }
+    &__content {
+        background: $mainColor;
+        z-index: 2;
+        border-radius: 20px;
+        height: min-content;
+        padding: 50px 25px;
+        width: 750px;
+        min-height: 200px;
+        max-height: 60vh;
+        transform: translateY(-5vh);
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        button {
+            border: 2px solid white;
+            width: 50%;
+        }
+        .subButton {
+            width: 40%;
+            font-size: 20px;
+            margin-top: 10px;
+            color: black;
+            background: white;
+        }
+        h3 {
+            font-size: 45px;
+            text-align: center;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        h2 {
+            font-size: 35px;
+            text-align: center;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        p {
+            font-size: 25px;
+            flex-grow: 1;
+            overflow: hidden;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        textarea{
+            font-size: 25px;
+            width: 100%;
+            height: 250px;
+            border-radius: 20px;
+            background: darken($mainColor, 10%);
+            margin: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            color: white;
+        }
+        img {
+            width: 80%;
+            height: auto;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+    }
+}

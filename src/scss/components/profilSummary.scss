@@ -46,3 +46,39 @@
         }
     }
 }
+
+.flex {
+    display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+    .profilSummary {
+        &__top {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .profilSummary {
+        padding: 20px 0px;
+        &__top {
+            align-items: center;
+            width: 90%;
+            margin-left: 5%;
+            &__profileDesc {
+                margin: 0;
+                &__date {
+                    display: none;
+                }
+            }
+        }
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

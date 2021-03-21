@@ -23,3 +23,17 @@
     box-sizing: border-box;
     background: rgb(227, 236, 238);
 }
+
+@media screen and (max-width: 1550px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .mainBlock {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -2,3 +2,9 @@
     @include normalBloc;
     height: 500px;
 }
+
+@media screen and (max-width: 1200px) {
+    .eventBox {
+        display: none;
+    }
+}

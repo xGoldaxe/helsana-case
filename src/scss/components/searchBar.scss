@@ -8,6 +8,12 @@
         border: none;
         background: #ecebeb;
     }
+    &__menu {
+        width: 46px;
+        height: 46px;
+        display: none;
+        cursor: pointer;
+    }
     &__logo {
         font-size: 60px;
         margin-block-start: 0;
@@ -44,4 +50,30 @@
         }
     }
 }
+
+@media screen and (max-width: 1550px) {
+    .searchBar {
+        margin: 0;
+        height: 78px;
+        padding: 0 10px;
+        &__logo {
+            display: none;
+        }
+        &__menu {
+            display: block;
+        }
+        &__profile {
+            display: none;
+        }
+        input {
+            margin: 0 10px;
+        }
+        &__notif {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+    }
+}
+
 

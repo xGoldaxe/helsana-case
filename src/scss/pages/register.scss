@@ -56,3 +56,14 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .register{
+        display: flex;
+        justify-content: center;
+        &__left {
+            display: none;
+        }
+    }
+
+}

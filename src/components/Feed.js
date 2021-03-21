@@ -7,7 +7,7 @@ import SortingBar from './SortingBar'
 
 export default function Feed() {
     const [feedTopic, setFeedTopic] = useState(0)
-    const allTopics = ['Advices', 'Find partner', 'articles']
+    const allTopics = ['Advices', 'Find partner', 'Articles']
 
     
     function topicChange(topicValue) {

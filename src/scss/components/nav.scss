@@ -17,6 +17,13 @@
     justify-content: space-between;
     align-items: center;
     overflow-y: hidden;
+    &__menu {
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        width: 48px;
+        height: 48x;
+    }
     &__helsanaLink {
         width: 230px;
         height: 230px;
@@ -70,5 +77,27 @@
             }
         }
 
+    }
+}
+
+.nav--mobile {
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: $mainColor;  
+    
+}
+
+@media screen and (max-width: 1550px) {
+    .nav {
+        display: none;
+    }
+    .nav--mobile {
+        display: flex;
+        
     }
 }

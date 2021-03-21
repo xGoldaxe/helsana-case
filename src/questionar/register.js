@@ -45,7 +45,7 @@ export default function Register() {
             </div>
             <div className="register__left">
                 <h3>VigorGo</h3>
-                <p>Become ealthier, save money</p>
+                <p>Become healthier, save money</p>
                 <div className="register__left__images">
                     {/* <img src={muscleSvg}></img> */}
                 </div>

@@ -10,7 +10,7 @@ export default function ProfilSummary() {
     return (
         <div className="profilSummary">
             <div className="profilSummary__top">
-                <div style={{display:'flex'}}>
+                <div className="flex">
                     <div className="profilSummary__top__profileDesc">
                         <h3 className="profilSummary__top__profileDesc__name">John doe, 24</h3>
                         <div className="profilSummary__top__profileDesc__date">
