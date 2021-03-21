@@ -82,3 +82,16 @@
         }
     }
 }
+
+@media screen and (max-width: 870px) {
+    .modalWrapper {
+        &__content {
+            button {
+                width: 100%
+            }
+            .subButton {
+                width: 90%;
+            }
+        }
+    }
+}

@@ -50,7 +50,7 @@ function ProfilBox() {
         <>     
             {modalActivate && 
                 <ModalWrapper outClick={destroyModal}>
-                    <h2>Profile modification :</h2>
+                    <h2>Profile modification</h2>
                     <textarea value={modalActivate.desc} onChange={(e) => onChange(e)}></textarea>
                     <button onClick={applyModal}>Apply the modifications</button>
                     <button className="subButton" onClick={destroyModal}>Cancel</button>
